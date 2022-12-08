@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Tag1/Tag1.iml" filepath="$PROJECT_DIR$/Tag1/Tag1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag2/Tag2.iml" filepath="$PROJECT_DIR$/Tag2/Tag2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag3/Tag3.iml" filepath="$PROJECT_DIR$/Tag3/Tag3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Training/Training.iml" filepath="$PROJECT_DIR$/Training/Training.iml" />
     </modules>
   </component>
 </project>
