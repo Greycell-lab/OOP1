@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -9,7 +10,7 @@ public class Main {
         int[] iarray = new int[25];
         String[] sarray = new String[25];
         //for(int i=0;i<iarray.length;i++) iarray[i] = rnd.nextInt(1, 100);
-        for(int i=0;i<sarray.length;i++) sarray[i] = "Hallo";
+        Arrays.fill(sarray, "Hallo");
         //System.out.println("Max Number: " + maxNumber(array));
         //List<Integer> liste;
         //liste = ConvertArray.convertToList(iarray);
