@@ -13,14 +13,8 @@ public class Roboter
     }
     public void fuehreAufgabeAus()
     {
-        if(istBatterieLaufzeitNiedrig())
-        {
-            System.out.println("Muss aufgeladen werden");
-        }
-        else
-        {
-            System.out.println(aufgabe);
-        }
+        if(istBatterieLaufzeitNiedrig()) System.out.println("Muss aufgeladen werden");
+        else System.out.println(aufgabe);
         batterieLaufzeit--;
     }
 }
