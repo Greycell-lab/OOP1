@@ -6,7 +6,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args)
     {
-        Random rnd = new Random();
+        /*Random rnd = new Random();
         int[] iarray = new int[25];
         String[] sarray = new String[25];
         //for(int i=0;i<iarray.length;i++) iarray[i] = rnd.nextInt(1, 100);
@@ -17,7 +17,8 @@ public class Main {
         //for(var x : liste) System.out.println(x);
         List<String> sliste;
         sliste = ConvertArray.convertToList(sarray);
-        for(var x : sliste) System.out.println(x);
+        for(var x : sliste) System.out.println(x);*/
+
     }
     public static int maxNumber(int[] array)
     {
