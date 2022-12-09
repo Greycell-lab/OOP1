@@ -99,6 +99,7 @@ public class Spieler {
         currentplayerIndexT2 = rnd.nextInt(0, team2.size());
         currentPlayerT1 = team1.get(currentplayerIndexT1);
         currentPlayerT2 = team2.get(currentplayerIndexT2);
+        System.out.println(currentPlayerT1.name + " VS " + currentPlayerT2.name);
         starlength = currentPlayerT1.name.length() + currentPlayerT2.name.length();
     }
     public static void gameStart() {
