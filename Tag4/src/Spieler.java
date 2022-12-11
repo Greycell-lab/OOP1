@@ -4,21 +4,21 @@ import java.util.Random;
 
 public class Spieler {
     static Random rnd = new Random();
-    public static int currentplayerIndexT1;
-    public static int currentplayerIndexT2;
-    public static Spieler currentPlayerT1;
-    public static Spieler currentPlayerT2;
-    public static String[] T1 = {"Hugo Meier", "Susi Sorglos", "Fred Feuerstein", "Marie Müller"};
-    public static String[] T2 = {"Fritz Schaffner", "Walter Peters", "Sigrid Friendly", "Annemarie Hostein"};
-    public String name;
-    public int score = 0;
-    public int wins = 0;
-    static int match = 1;
-    static char star = '*';
-    static int starlength;
-    static int starAfterNames;
-    static List<Spieler> team1 = new ArrayList<>();
-    static List<Spieler> team2 = new ArrayList<>();
+    private static int currentplayerIndexT1;
+    private static int currentplayerIndexT2;
+    private static Spieler currentPlayerT1;
+    private static Spieler currentPlayerT2;
+    private static String[] T1 = {"Hugo Meier", "Susi Sorglos", "Fred Feuerstein", "Marie Müller"};
+    private static String[] T2 = {"Fritz Schaffner", "Walter Peters", "Sigrid Friendly", "Annemarie Hostein"};
+    private String name;
+    private int score = 0;
+    private int wins = 0;
+    private static int match = 1;
+    private static char star = '*';
+    private static int starlength;
+    private static int starAfterNames;
+    private static List<Spieler> team1 = new ArrayList<>();
+    private static List<Spieler> team2 = new ArrayList<>();
     public Spieler(String name){
 
         this.name = name;
@@ -107,11 +107,24 @@ public class Spieler {
             initialiseGame();
         }while(currentPlayerT1.wins != 3 && currentPlayerT2.wins != 3);
     }
+    public static void gameEngine()
+    {
+        while(!team1.isEmpty()&&!team2.isEmpty()) {
+            Spieler.choosePlayers();
+            Spieler.gameStart();
+        }
+    }
     public static void getWinner()
     {
         System.out.println();
         System.out.println("\t*************************");
         System.out.println(team1.isEmpty() ? "\t***Team 2 hat gewonnen***" : "\t***Team 1 hat gewonnen***");
         System.out.println("\t*************************");
+    }
+    public static void letsGo()
+    {
+        constructTeam();
+        gameEngine();
+        getWinner();
     }
 }
