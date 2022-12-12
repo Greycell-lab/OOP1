@@ -1,18 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class TwoSum
 {
-    static int[] array = new int[]{11, 4, 9, 2};
-    static int[] array1 = new int[10];
-    public static int[] getSum(int number)
+    public static int[] twoSum(int[] nums, int target)
     {
-        int temp=number;
-        for(int i=0;i<4;i++)
-        {
-            if(array[i]<=number)
-            {
-                temp-=array[i];
-                array1[i] = array[i];
+        Map<Integer, Integer> complements = new HashMap<>();
+        for(int i=0; i <nums.length; i++){
+            Integer complementIndex = complements.get(nums[i]);
+            if(complementIndex != null){
+                return new int[]{i, complementIndex};
             }
+            complements.put(target - nums[i], i);
         }
-        return array1;
+        return nums;
     }
+
 }
