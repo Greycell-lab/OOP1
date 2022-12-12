@@ -49,11 +49,11 @@ public class Spieler {
                 for(int i=0;i<starlength+4;i++) System.out.print(star);
                 starAfterNames = currentPlayerT1.name.length() + 2;
                 System.out.println();
-                System.out.print("* " + currentPlayerT1.name + " WINS!");
+                System.out.print("* " + currentPlayerT1.name + " Wins!");
                 for(int i=0;i<starlength - starAfterNames-3; i++) System.out.print(" ");
                 System.out.println("*");
                 starAfterNames = currentPlayerT2.name.length() + 2;
-                System.out.print("* " + currentPlayerT2.name + " IS OUT!");
+                System.out.print("* " + currentPlayerT2.name + " Is out!");
                 for(int i=0;i<starlength - starAfterNames-5; i++) System.out.print(" ");
                 System.out.println("*");
                 for(int i=0;i<starlength+4;i++) System.out.print(star);
@@ -74,11 +74,11 @@ public class Spieler {
                 for(int i=0;i<starlength+4;i++) System.out.print(star);
                 starAfterNames = currentPlayerT2.name.length() + 2;
                 System.out.println();
-                System.out.print("* " + currentPlayerT2.name + " WINS!");
+                System.out.print("* " + currentPlayerT2.name + " Wins!");
                 for(int i=0;i<starlength - starAfterNames-3; i++) System.out.print(" ");
                 System.out.println("*");
                 starAfterNames = currentPlayerT1.name.length() + 2;
-                System.out.print("* " + currentPlayerT1.name + " IS OUT!");
+                System.out.print("* " + currentPlayerT1.name + " Is Out!");
                 for(int i=0;i<starlength - starAfterNames-5; i++) System.out.print(" ");
                 System.out.println("*");
                 for(int i=0;i<starlength+4;i++) System.out.print(star);
@@ -102,7 +102,7 @@ public class Spieler {
         System.out.println(currentPlayerT1.name + " VS " + currentPlayerT2.name);
         starlength = currentPlayerT1.name.length() + currentPlayerT2.name.length();
     }
-    public static void gameStart() {
+    public static void matchStart() {
         do {
             initialiseGame();
         }while(currentPlayerT1.wins != 3 && currentPlayerT2.wins != 3);
@@ -111,14 +111,14 @@ public class Spieler {
     {
         while(!team1.isEmpty()&&!team2.isEmpty()) {
             Spieler.choosePlayers();
-            Spieler.gameStart();
+            Spieler.matchStart();
         }
     }
     public static void getWinner()
     {
         System.out.println();
         System.out.println("\t*************************");
-        System.out.println(team1.isEmpty() ? "\t***Team 2 hat gewonnen***" : "\t***Team 1 hat gewonnen***");
+        System.out.println(team1.isEmpty() ? "\t***Team 2 Wins***" : "\t***Team 1 Wins***");
         System.out.println("\t*************************");
     }
     public static void letsGo()
