@@ -8,8 +8,8 @@ public class Spieler {
     private static int currentplayerIndexT2;
     private static Spieler currentPlayerT1;
     private static Spieler currentPlayerT2;
-    private static String[] T1 = {"Hugo Meier", "Susi Sorglos", "Fred Feuerstein", "Marie Müller"};
-    private static String[] T2 = {"Fritz Schaffner", "Walter Peters", "Sigrid Friendly", "Annemarie Hostein"};
+    private static final String[] T1 = {"Hugo Meier", "Susi Sorglos", "Fred Feuerstein", "Marie Müller"};
+    private static final String[] T2 = {"Fritz Schaffner", "Walter Peters", "Sigrid Friendly", "Annemarie Hostein"};
     private String name;
     private int score = 0;
     private int wins = 0;
