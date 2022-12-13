@@ -21,7 +21,6 @@ public class Main {
         }
         catch(DateTimeParseException e) {
             System.out.println("Wrong Date Format.");
-            System.exit(-1);
         }
         return LocalDate.parse(datum);
     }

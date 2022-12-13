@@ -6,12 +6,15 @@
       <module fileurl="file://$PROJECT_DIR$/Tag3/FPA/FPA.iml" filepath="$PROJECT_DIR$/Tag3/FPA/FPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/Challanges/Generic/Generic.iml" filepath="$PROJECT_DIR$/Challanges/Generic/Generic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kaffee/Kaffee.iml" filepath="$PROJECT_DIR$/Kaffee/Kaffee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tag6/KniffelSpiel/KniffelSpiel.iml" filepath="$PROJECT_DIR$/Tag6/KniffelSpiel/KniffelSpiel.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP1.iml" filepath="$PROJECT_DIR$/OOP1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Serialize/Serialize.iml" filepath="$PROJECT_DIR$/Serialize/Serialize.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag1/Tag1.iml" filepath="$PROJECT_DIR$/Tag1/Tag1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag2/Tag2.iml" filepath="$PROJECT_DIR$/Tag2/Tag2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag3/Tag3.iml" filepath="$PROJECT_DIR$/Tag3/Tag3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag4/Tag4.iml" filepath="$PROJECT_DIR$/Tag4/Tag4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag5/Tag5.iml" filepath="$PROJECT_DIR$/Tag5/Tag5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tag6/Tag6.iml" filepath="$PROJECT_DIR$/Tag6/Tag6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Training/Training.iml" filepath="$PROJECT_DIR$/Training/Training.iml" />
     </modules>
   </component>

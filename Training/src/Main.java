@@ -7,16 +7,27 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args)
     {
-        SerializeObject a = new SerializeObject();
+        //SerializeObject a = new SerializeObject();
             /*a.id = 10;
             a.name = "Bambam";
             SerializeObject.serialize(a);*/
-        //List<SerializeObject> list = new ArrayList<>();
-        //for(int i=0; i<10;i++) list.add(new SerializeObject(i, "Master"));
+        List<SerializeObject> list = new ArrayList<>();
+
+        for(int i=0; i<10;i++) {
+            SerializeObject x = new SerializeObject();
+/*            x.name = "Lol";
+            x.id = 1;*/
+            list.add(x);
+
+        }
+        //for(var x : list) System.out.println(x.name);
         //for(var x : list) SerializeObject.serialize(x);
-        //for(var x : list) SerializeObject.deserialize(x);
+
+        for(var x : list) SerializeObject.deserialize(x);
+        for(var x : list) System.out.println(x.name);
+
         //for(var x : list) System.out.println("ID: " + x.id + "\nName: " + x.name);
-        a = SerializeObject.deserialize(a);
-        System.out.println(a.id + " " + a.name);
+        //a = SerializeObject.deserialize(a);
+        //System.out.println(a.id + " " + a.name);
     }
 }

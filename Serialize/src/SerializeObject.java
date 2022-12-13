@@ -1,5 +1,6 @@
 import java.io.*;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SerializeObject implements Serializable {
     int id;
@@ -13,13 +14,13 @@ public class SerializeObject implements Serializable {
         this.id = id;
         this.name = name;
     }*/
-    public static void serialize(Object object)
+    public static void serialize(List<SerializeObject> list)
     {
         try
         {
           fos = new FileOutputStream("C://test.txt", true);
           oos = new ObjectOutputStream(fos);
-          oos.writeObject(object);
+          oos.writeObject(list);
           oos.flush();
           oos.close();
 
@@ -30,19 +31,17 @@ public class SerializeObject implements Serializable {
         }
 
     }
-    public static SerializeObject deserialize(SerializeObject object)
+    public static void deserialize(List<SerializeObject> list)
     {
         try{
             fis = new FileInputStream("C://test.txt");
             ois = new ObjectInputStream(fis);
-            object = (SerializeObject)ois.readObject();
+            list = (List<SerializeObject>)ois.readObject();
             ois.close();
-            return object;
         }
         catch(Exception e)
         {
             System.out.println(e.getMessage());
         }
-        return object;
     }
 }
