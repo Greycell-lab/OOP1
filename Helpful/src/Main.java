@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -5,9 +7,11 @@ public class Main {
         ObjektClass a = new ObjektClass(10, "Master", false);
         ObjektClass b = new ObjektClass(15, "Hallo");
         // Zuweisung von NICHT-Statischen Werten des Objekts (gelten nur für dieses Objekt)
+        a.id = 10;
+        a.name = "Hello";
+        a.istAn = true;
         // Ausführung einer NICHT-Statischen Methode über das Objekt
         //a.printTextObject();
-
         // Zuweisung von Statischen Werten der Klasse (Kein Objekt nötig)
         ObjektClass.ID = 10;
         ObjektClass.NAME = "Mister";

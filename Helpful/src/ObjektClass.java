@@ -1,10 +1,11 @@
 public class ObjektClass {
-    int id=0;
+    int id;
     String name;
     boolean istAn;
     static int ID;
     static String NAME;
     static boolean istAN;
+
     ObjektClass(int id, String name)
     {
         this.id = id;
