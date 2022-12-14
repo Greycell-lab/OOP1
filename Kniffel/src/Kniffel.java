@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -9,7 +10,8 @@ public class Kniffel {
     int[][] chart = new int[6][1];
     int counter;
     int number;
-    boolean street, gotIt;
+    int sum = 0;
+    boolean street, gotIt, readyCheck, impossible;
     public void fillArray(int a, int b)
     {
         for(int i=0;i<array.length;i++) array[i] = rnd.nextInt(a,b+1);
@@ -17,11 +19,14 @@ public class Kniffel {
     }
     public void printArray()
     {
+        System.out.println();
+        System.out.println("***********************");
         System.out.print("Gewürfelt: ");
         for(var x : array) System.out.print(x + " ");
+        System.out.println("\n***********************");
         System.out.println();
     }
-    public void letsPlay(int a, int b)
+    /*public void letsPlay(int a, int b) // Aufgabe
     {
         do {
             fillArray(a, b);
@@ -39,41 +44,84 @@ public class Kniffel {
             counter++;
         }while(!street);
         System.out.println("Straße nach: " + counter + " versuchen.");
-    }
+    }*/
     public void gameStart()
     {
-        do {
+        while(true){
             fillArray(1, 6);
             printArray();
             showPaper();
-        }while(true);
+            checkReady();
+        }
     }
     public void showPaper()
     {
-        System.out.println();
         System.out.println("****Point Chart****");
-        for(int i=0;i<chart.length;i++) System.out.println((i+1) + ": [ " + chart[i][0] + " ]");
+        for(int i=0;i<chart.length;i++) System.out.println("\t" + (i+1) + ": [ " + chart[i][0] + " ]");
         do {
             getNumber();
-        }while(chart[number][0] != 0);
-        for(int i=0;i<array.length-1;i++)
-        {
-            if(array[i]==number) counter++;
+            for (int j : array) {
+                impossible = chart[j - 1][0] != 0;
+                if(!impossible) break;
+            }
+            if(impossible) break;
+        }while(chart[number-1][0] != 0);
+        if(!impossible) {
+            for (int j : array) {
+                if (j == number) counter++;
+            }
+            chart[number - 1][0] = counter * number;
+            counter = 0;
         }
-        chart[number][0] = counter * number;
     }
     public void getNumber()
     {
         do {
-
             try {
-                System.out.println("Welche Zahl möchtest du einfügen: ");
-                this.number = Integer.parseInt(sc.nextLine());
+                System.out.print("Welche Zahl möchtest du einfügen: ");
+                number = Integer.parseInt(sc.nextLine());
                 gotIt = true;
             } catch (Exception e) {
-                System.out.println("Diese Zahl wurde nicht gewürufelt.");
+                System.out.println("Diese Zahl wurde nicht gewürfelt.");
             }
         }while(!gotIt);
     }
+    public void checkReady()
+    {
+        for (int[] ints : chart) {
+            if (ints[0] != 0) readyCheck = true;
+            else {
+                readyCheck = false;
+                break;
+            }
+        }
+        if(readyCheck)
+        {
+            for(int[] a : chart)
+            {
+                for(int x : a) sum += x;
+            }
+            System.out.println();
+            System.out.println("*****************************");
+            System.out.println("Spiel zuende! Punktzahl: " + sum);
+            System.out.println("Danke fürs spielen!");
+            System.out.println("*****************************");
+            System.exit(0);
+        }
+    }
+    public void writeScore()
+    {
+        try
+        {
+            OutputStream os = new FileOutputStream("/score.txt");
+            Writer writer = new OutputStreamWriter(os);
+            writer.write(sum);
+            writer.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
 
+    }
 }

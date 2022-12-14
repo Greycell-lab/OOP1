@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Spieler {
+
     static Random rnd = new Random();
     private static int currentplayerIndexT1;
     private static int currentplayerIndexT2;
@@ -25,6 +26,7 @@ public class Spieler {
     }
     public static void initialiseGame()
     {
+
         if(currentPlayerT1.wins == 3)
         {
             currentPlayerT1.wins = 0;

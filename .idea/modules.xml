@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Challanges/Challanges.iml" filepath="$PROJECT_DIR$/Challanges/Challanges.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag3/FPA/FPA.iml" filepath="$PROJECT_DIR$/Tag3/FPA/FPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/Challanges/Generic/Generic.iml" filepath="$PROJECT_DIR$/Challanges/Generic/Generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Helpful/Helpful.iml" filepath="$PROJECT_DIR$/Helpful/Helpful.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kaffee/Kaffee.iml" filepath="$PROJECT_DIR$/Kaffee/Kaffee.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kniffel/Kniffel.iml" filepath="$PROJECT_DIR$/Kniffel/Kniffel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag6/KniffelSpiel/KniffelSpiel.iml" filepath="$PROJECT_DIR$/Tag6/KniffelSpiel/KniffelSpiel.iml" />
@@ -16,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/Tag4/Tag4.iml" filepath="$PROJECT_DIR$/Tag4/Tag4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag5/Tag5.iml" filepath="$PROJECT_DIR$/Tag5/Tag5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag6/Tag6.iml" filepath="$PROJECT_DIR$/Tag6/Tag6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tag7/Tag7.iml" filepath="$PROJECT_DIR$/Tag7/Tag7.iml" />
       <module fileurl="file://$PROJECT_DIR$/Training/Training.iml" filepath="$PROJECT_DIR$/Training/Training.iml" />
     </modules>
   </component>
