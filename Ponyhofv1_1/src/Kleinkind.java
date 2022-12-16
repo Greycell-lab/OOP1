@@ -12,12 +12,10 @@ public class Kleinkind extends Besucher{
         if(rnd.nextInt(0, 2) == 0)
         {
             Besucher.liste.add(new Erwachsener());
-            erwachsener++;
         }
         else
         {
             Besucher.liste.add(new Rentner());
-            rentner++;
         }
     }
 }
