@@ -2,7 +2,6 @@ import java.util.Random;
 
 public class Kleinkind extends Besucher{
     static Random rnd = new Random();
-
     Kleinkind(){
         this.alter = rnd.nextInt(0, 8);
         this.bezeichnung = "Kleinkind";

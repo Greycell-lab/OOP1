@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class Erwachsener extends Besucher{
     static Random rnd = new Random();
+
     Erwachsener(){
         this.alter = rnd.nextInt(14, 67);
         this.bezeichnung = "Erwachsener";

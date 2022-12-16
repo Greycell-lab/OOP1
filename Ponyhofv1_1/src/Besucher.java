@@ -10,10 +10,20 @@ public class Besucher {
     float eintrittspreis;
     static float gesamtPreis = 0;
     static int kleinkind = 0;
+    static int kleinkindDurchschnitt = 0;
+    static float prozentKleinkinder = 0;
     static int kind = 0;
+    static int kindDurchschnitt = 0;
+    static float prozentKinder = 0;
     static int student = 0;
+    static int studentDurchschnitt = 0;
+    static float prozentStudenten = 0;
     static int erwachsener = 0;
+    static int erwachseneDurchschnitt = 0;
+    static float prozentErwachsene = 0;
     static int rentner = 0;
+    static int rentnerDurchschnitt = 0;
+    static float prozentRentner = 0;
     static float kleinkindPreis = 0;
     static float kindPreis = 0;
     static float studentPreis = 0;
@@ -33,12 +43,42 @@ public class Besucher {
     static void ausgabeGesamt() {
         for (var x : liste) {
             gesamtPreis += x.eintrittspreis;
-            if (x.getClass() == Kleinkind.class) kleinkindPreis += x.eintrittspreis;
-            if (x.getClass()== Kind.class) kindPreis += x.eintrittspreis;
-            if (x.getClass()== Student.class) studentPreis += x.eintrittspreis;
-            if (x.getClass()== Erwachsener.class) erwachsenerPreis += x.eintrittspreis;
-            if (x.getClass()== Rentner.class) rentnerPreis += x.eintrittspreis;
+            if (x.getClass() == Kleinkind.class)
+            {
+                kleinkindPreis += x.eintrittspreis;
+                kleinkindDurchschnitt += x.alter;
+            }
+            if (x.getClass()== Kind.class)
+            {
+                kindPreis += x.eintrittspreis;
+                kindDurchschnitt += x.alter;
+            }
+            if (x.getClass()== Student.class)
+            {
+                studentPreis += x.eintrittspreis;
+                studentDurchschnitt += x.alter;
+            }
+            if (x.getClass()== Erwachsener.class)
+            {
+                erwachsenerPreis += x.eintrittspreis;
+                erwachseneDurchschnitt += x.alter;
+            }
+            if (x.getClass()== Rentner.class)
+            {
+                rentnerPreis += x.eintrittspreis;
+                rentnerDurchschnitt += x.alter;
+            }
         }
+        kleinkindDurchschnitt /= kleinkind;
+        kindDurchschnitt /= kind;
+        studentDurchschnitt /= student;
+        erwachseneDurchschnitt /= erwachsener;
+        rentnerDurchschnitt /= rentner;
+        prozentKleinkinder = 100f / liste.size() * kleinkind;
+        prozentErwachsene = 100f / liste.size() * erwachsener;
+        prozentStudenten = 100f / liste.size() * student;
+        prozentRentner = 100f / liste.size() * rentner;
+        prozentKinder = 100f / liste.size() * kind;
         System.out.println();
         System.out.println("\t\t\t\t*****BESUCHER*****");
         System.out.println("Bezeichnung\t\tMenge\tEinzelpreis\tGesamtpreis");
@@ -51,6 +91,19 @@ public class Besucher {
         System.out.println("Gesamt:\t\t\t" + liste.size() + "\t\t\t\t\t" + String.format("%.02f", gesamtPreis));
     }
     static void einnahmenGesamt() {
+        System.out.println();
+        System.out.println("Altersdurchschnitt Kleinkinder: " + kleinkindDurchschnitt + " Jahre");
+        System.out.println("Altersdurchschnitt Kinder: " + kindDurchschnitt + " Jahre");
+        System.out.println("Altersdurchschnitt Studenten: " + studentDurchschnitt + " Jahre");
+        System.out.println("Altersdurchschnitt Erwachsene: " + erwachseneDurchschnitt + " Jahre");
+        System.out.println("Altersdurchschnitt Rentner: " + rentnerDurchschnitt + " Jahre");
+        System.out.println();
+        System.out.println("Anteil Kleinkinder in Prozent: " + String.format("%.02f", prozentKleinkinder));
+        System.out.println("Anteil Kinder in Prozent: " + String.format("%.02f", prozentKinder));
+        System.out.println("Anteil Studenten in Prozent: " + String.format("%.02f", prozentStudenten));
+        System.out.println("Anteil Erwachsene in Prozent: " + String.format("%.02f", prozentErwachsene));
+        System.out.println("Anteil Rentner in Prozent: " + String.format("%.02f", prozentRentner));
+        System.out.println();
         System.out.println("Geamteinnahmen: " + String.format("%.02f", (Besucher.gesamtPreis + Attraktion.gesamtPreis + Verpflegung.gesamtPreis)) + "€");
     }
 

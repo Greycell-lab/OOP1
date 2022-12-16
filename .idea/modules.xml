@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Challanges/Challanges.iml" filepath="$PROJECT_DIR$/Challanges/Challanges.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag3/FPA/FPA.iml" filepath="$PROJECT_DIR$/Tag3/FPA/FPA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Game/Game.iml" filepath="$PROJECT_DIR$/Game/Game.iml" />
       <module fileurl="file://$PROJECT_DIR$/Challanges/Generic/Generic.iml" filepath="$PROJECT_DIR$/Challanges/Generic/Generic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Helpful/Helpful.iml" filepath="$PROJECT_DIR$/Helpful/Helpful.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kaffee/Kaffee.iml" filepath="$PROJECT_DIR$/Kaffee/Kaffee.iml" />
@@ -11,7 +12,9 @@
       <module fileurl="file://$PROJECT_DIR$/Tag6/KniffelSpiel/KniffelSpiel.iml" filepath="$PROJECT_DIR$/Tag6/KniffelSpiel/KniffelSpiel.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP1.iml" filepath="$PROJECT_DIR$/OOP1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ponyhof/Ponyhof.iml" filepath="$PROJECT_DIR$/Ponyhof/Ponyhof.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PonyhofWithEnums/PonyhofWithEnums.iml" filepath="$PROJECT_DIR$/PonyhofWithEnums/PonyhofWithEnums.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ponyhofv1_1/Ponyhofv1_1.iml" filepath="$PROJECT_DIR$/Ponyhofv1_1/Ponyhofv1_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ponyhofv1_1/Ponyhofv1_11.iml" filepath="$PROJECT_DIR$/Ponyhofv1_1/Ponyhofv1_11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Serialize/Serialize.iml" filepath="$PROJECT_DIR$/Serialize/Serialize.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag1/Tag1.iml" filepath="$PROJECT_DIR$/Tag1/Tag1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag2/Tag2.iml" filepath="$PROJECT_DIR$/Tag2/Tag2.iml" />
