@@ -40,6 +40,7 @@ public class Besucher {
             if (x.getClass()== Rentner.class) rentnerPreis += x.eintrittspreis;
         }
         System.out.println();
+        System.out.println("\t\t\t\t*****BESUCHER*****");
         System.out.println("Bezeichnung\t\tMenge\tEinzelpreis\tGesamtpreis");
         System.out.println("Kleinkind\t\t" + kleinkind + "\t\t5 Euro\t\t" + String.format("%.02f", kleinkindPreis));
         System.out.println("Kind\t\t\t" + kind + "\t\t7 Euro\t\t" + String.format("%.02f", kindPreis));
@@ -48,7 +49,6 @@ public class Besucher {
         System.out.println("Rentner\t\t\t" + rentner + "\t\t10 Euro\t\t" + String.format("%.02f", rentnerPreis));
         System.out.println("-----------------------------------------------");
         System.out.println("Gesamt:\t\t\t" + liste.size() + "\t\t\t\t\t" + String.format("%.02f", gesamtPreis));
-        System.out.println();
     }
     static void einnahmenGesamt() {
         System.out.println("Geamteinnahmen: " + String.format("%.02f", (Besucher.gesamtPreis + Attraktion.gesamtPreis + Verpflegung.gesamtPreis)) + "€");

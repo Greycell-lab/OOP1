@@ -83,6 +83,7 @@ public class Verpflegung {
         }
 
         System.out.println();
+        System.out.println("\t\t\t\t*****VERPFLEGUNG*****");
         System.out.println("Bezeichnung\t\tMenge\tEinzelpreis\tGesamtpreis");
         System.out.println("Wasser\t\t\t" + wasser + "\t\t2 Euro\t\t" + String.format("%.02f", wasserPreis));
         System.out.println("Limo\t\t\t" + limo + "\t\t3 Euro\t\t" + String.format("%.02f", limoPreis));
@@ -94,6 +95,5 @@ public class Verpflegung {
         System.out.println("Veganer Wrap\t" + veganerWrap + "\t\t5 Euro\t\t" + String.format("%.02f", veganerWrapPreis));
         System.out.println("-----------------------------------------------");
         System.out.println("Gesamt:\t\t\t\t\t\t\t\t" + String.format("%.02f", gesamtPreis));
-        System.out.println();
     }
 }

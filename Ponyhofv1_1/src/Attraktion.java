@@ -58,6 +58,7 @@ public class Attraktion {
             if (x.bezeichnung.equals("Streichelzoo")) streichelZooPreis += x.preis;
         }
         System.out.println();
+        System.out.println("\t\t\t\t*****ATTRAKTIONEN*****");
         System.out.println("Bezeichnung\t\tMenge\tEinzelpreis\tGesamtpreis");
         System.out.println("Planwagenfahrt\t" + planwagenFahrt + "\t\t7 Euro\t\t" + String.format("%.02f", planwagenFahrtPreis));
         System.out.println("Ponyreiten\t\t" + ponyReiten + "\t\t5 Euro\t\t" + String.format("%.02f", ponyReitenPreis));
@@ -66,6 +67,5 @@ public class Attraktion {
         System.out.println("Streichelzoo\t" + streichelZoo + "\t\t3 Euro\t\t" + String.format("%.02f", streichelZooPreis));
         System.out.println("-----------------------------------------------");
         System.out.println("Gesamt:\t\t\t\t\t\t\t\t" + String.format("%.02f", gesamtPreis));
-        System.out.println();
     }
 }
