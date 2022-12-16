@@ -45,7 +45,7 @@ public class Besucher {
         System.out.println("Kind\t\t\t" + kind + "\t\t7 Euro\t\t" + String.format("%.02f", kindPreis));
         System.out.println("Student\t\t\t" + student + "\t\t9 Euro\t\t" + String.format("%.02f", studentPreis));
         System.out.println("Erwachsener\t\t" + erwachsener + "\t\t15 Euro\t\t" + String.format("%.02f", erwachsenerPreis));
-        System.out.println("Rentner\t\t\t" + rentner + "\t\t5 Euro\t\t" + String.format("%.02f", rentnerPreis));
+        System.out.println("Rentner\t\t\t" + rentner + "\t\t10 Euro\t\t" + String.format("%.02f", rentnerPreis));
         System.out.println("-----------------------------------------------");
         System.out.println("Gesamt:\t\t\t" + liste.size() + "\t\t\t\t\t" + String.format("%.02f", gesamtPreis));
         System.out.println();
