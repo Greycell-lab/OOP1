@@ -4,7 +4,6 @@ public class Kleinkind extends Besucher{
     static Random rnd = new Random();
     Kleinkind(){
         this.alter = rnd.nextInt(0, 8);
-        this.bezeichnung = "Kleinkind";
         this.eintrittspreis = 5.0f;
         kleinkind++;
         for(int i=0;i<3;i++) Attraktion.liste.add(new Attraktion(rnd.nextInt(0, 5)));
