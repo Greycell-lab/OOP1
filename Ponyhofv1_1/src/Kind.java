@@ -1,8 +1,14 @@
 import java.util.Random;
 
 public class Kind extends Besucher{
+        //Zufallszahlengenerator
     static Random rnd = new Random();
-
+    /**
+     * Erstellt ein Kind-Objekt. Zusätzlich wird der Attraktionsliste der Klasse Attraktion jeweils
+     * 3 zufällig ausgewählte Attraktion-Objekte hinzugefügt und der
+     * Verpflegungsliste der Klasse Verpflegung 2 bis 4 zufällig ausgewählte
+     * Verpflegung-Objekte hinzugefügt.
+     */
     Kind(){
         this.alter = rnd.nextInt(8, 14);
         this.eintrittspreis = 7.0f;

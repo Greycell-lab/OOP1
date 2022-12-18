@@ -1,13 +1,16 @@
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class Besucher {
+        //Liste die alle Besucher-Objekte enthält
+    static List<Besucher> liste = new ArrayList<>();
+        //Zufallszahlengenerator
     static Random rnd = new Random();
+        //Objekt-Attribute
     int alter;
-    String bezeichnung;
     float eintrittspreis;
+        //Klassen-Attribute
     static float gesamtPreis = 0;
     static int kleinkind = 0;
     static int kleinkindDurchschnitt = 0;
@@ -29,8 +32,14 @@ public class Besucher {
     static float studentPreis = 0;
     static float erwachsenerPreis = 0;
     static float rentnerPreis = 0;
-    static List<Besucher> liste = new ArrayList<>();
-    static void erstelleBesucherliste() {
+
+    /**
+     * Füllt die Besucherliste mit zufällig ausgewählten Besuchern der
+     * Unterklassen (Kleinkind, Kind, Student, Rentner, Erwachsener) solange
+     * die Listengröße zwischen 150 und 250 liegt (Listengröße wird zufällig
+     * festgelegt)
+     */
+    static void sieKommen() {
         do {
             int x = rnd.nextInt(0, 5);
             if(x == 0) liste.add(new Kleinkind());
@@ -40,6 +49,11 @@ public class Besucher {
             if(x == 4) liste.add(new Erwachsener());
         } while (liste.size() < rnd.nextInt(150, 251));
     }
+
+    /**
+     * Gibt die Liste der Besucher Unterteilt in ihre Unterklassen aus inklusive
+     * Besucheranzahl der einzelnen Klassen und die Gesamteinnahmen.
+     */
     static void ausgabeGesamt() {
         for (var x : liste) {
             gesamtPreis += x.eintrittspreis;

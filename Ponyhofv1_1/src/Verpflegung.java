@@ -2,9 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Verpflegung {
+        //Liste der verkauften Verpflegung
+    static List<Verpflegung> liste = new ArrayList<>();
+        //Objekt-Attribute
     String bezeichnung;
     float preis;
-    static List<Verpflegung> liste = new ArrayList<>();
+        //Klassen-Attribute
     static float gesamtPreis = 0;
     static int wasser = 0;
     static float wasserPreis = 0;
@@ -23,6 +26,11 @@ public class Verpflegung {
     static int veganerWrap = 0;
     static float veganerWrapPreis = 0;
 
+    /**
+     * Konstruktor für Objekte der Verpflegung-Klasse
+     * @param random
+     * Zahl zwischen beiderseits 0 und 7
+     */
     Verpflegung(int random) {
         switch (random) {
             case 0 -> {
@@ -69,6 +77,10 @@ public class Verpflegung {
 
     }
 
+    /**
+     * Ausgabe der Verpflegung inklusive Menge und Gesamteinnahmen
+     * einzelner und aller Verpflegungen zusammen
+     */
     static void ausgabeGesamt() {
         for (var x : liste) {
             gesamtPreis += x.preis;

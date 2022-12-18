@@ -1,7 +1,15 @@
 import java.util.Random;
 
 public class Student extends Besucher{
+        //Zufallszahlengenerator
     static Random rnd = new Random();
+    /**
+     * Erstellt ein Student-Objekt.
+     * Zusätzlich wird der Attraktionsliste der Klasse Attraktion jeweils
+     * 3 zufällig ausgewählte Attraktion-Objekte hinzugefügt und der
+     * Verpflegungsliste der Klasse Verpflegung 2 bis 4 zufällig ausgewählte
+     * Verpflegung-Objekte hinzugefügt.
+     */
     Student(){
         this.alter = rnd.nextInt(18, 40);
         this.eintrittspreis = 9.0f;

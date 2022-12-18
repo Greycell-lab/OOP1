@@ -2,9 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Attraktion {
+        //Liste aller benutzten Attraktionen
     static List<Attraktion> liste = new ArrayList<>();
+        //Objekt-Attribute
     String bezeichnung;
     float preis;
+        //Klassen-Attribute
     static float gesamtPreis = 0;
     static int planwagenFahrt = 0;
     static int ponyReiten = 0;
@@ -16,7 +19,11 @@ public class Attraktion {
     static float huehnerFuetternPreis = 0;
     static float brotBackenPreis = 0;
     static float streichelZooPreis = 0;
-
+    /**
+     * Konstruktor für Objekte der Attraktion-Klasse
+     * @param random
+     * Zahl zwischein beiderseits einschließlich 0 und 4
+     */
     Attraktion(int random) {
         switch (random) {
             case 0 -> {
@@ -48,6 +55,10 @@ public class Attraktion {
 
     }
 
+    /**
+     * Ausgabe der Attraktionen inklusive Menge und Gesamteinnahmen
+     * einzelner und aller Attraktionen zusammen.
+     */
     static void ausgabeGesamt() {
         for (var x : liste) {
             gesamtPreis += x.preis;
