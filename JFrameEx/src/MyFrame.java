@@ -11,8 +11,8 @@ public class MyFrame extends JFrame {
     static StringBuilder num = new StringBuilder();
     static int number;
     static int sum;
-    static int temp;
-    String operator;
+    static int number2;
+    String operator = "";
     ArrayList<Button> buttons = new ArrayList<>();
     ArrayList<Button> operators = new ArrayList<>();
     MyFrame(){
@@ -71,28 +71,72 @@ public class MyFrame extends JFrame {
         });
         plus.setBounds(340, 70, 100, 50);
         plus.addActionListener(e -> {
+            if(!operator.equals("")) {
+                System.out.println(num.toString());
+                number2 = Integer.parseInt(num.toString());
+                number += number2;
+                num.delete(0, num.length());
+                number2 = 0;
+                System.out.println(number);
+                tf.setText("0");
+            }
+            else {
+                number = Integer.parseInt(num.toString());
+                num.delete(0, num.length());
+                tf.setText("0");
+            }
             operator = "+";
-            number = Integer.parseInt(num.toString());
-            num.delete(0, num.length());
-            tf.setText("0");
         });
         minus.addActionListener(e -> {
+            if(!operator.equals("")) {
+                System.out.println(num.toString());
+                number2 = Integer.parseInt(num.toString());
+                number -= number2;
+                num.delete(0, num.length());
+                number2 = 0;
+                System.out.println(number);
+                tf.setText("0");
+            }
+            else {
+                number = Integer.parseInt(num.toString());
+                num.delete(0, num.length());
+                tf.setText("0");
+            }
             operator = "-";
-            number = Integer.parseInt(num.toString());
-            num.delete(0, num.length());
-            tf.setText("0");
         });
         multiply.addActionListener(e -> {
+            if(!operator.equals("")) {
+                System.out.println(num.toString());
+                number2 = Integer.parseInt(num.toString());
+                number *= number2;
+                num.delete(0, num.length());
+                number2 = 0;
+                System.out.println(number);
+                tf.setText("0");
+            }
+            else {
+                number = Integer.parseInt(num.toString());
+                num.delete(0, num.length());
+                tf.setText("0");
+            }
             operator = "*";
-            number = Integer.parseInt(num.toString());
-            num.delete(0, num.length());
-            tf.setText("0");
         });
         divide.addActionListener(e -> {
+            if(!operator.equals("")) {
+                System.out.println(num.toString());
+                number2 = Integer.parseInt(num.toString());
+                number /= number2;
+                num.delete(0, num.length());
+                number2 = 0;
+                System.out.println(number);
+                tf.setText("0");
+            }
+            else {
+                number = Integer.parseInt(num.toString());
+                num.delete(0, num.length());
+                tf.setText("0");
+            }
             operator = "/";
-            number = Integer.parseInt(num.toString());
-            num.delete(0, num.length());
-            tf.setText("0");
         });
         clear.addActionListener(e -> {
             num.delete(0, num.length());
