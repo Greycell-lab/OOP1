@@ -29,7 +29,7 @@ public class Verpflegung {
     /**
      * Konstruktor für Objekte der Verpflegung-Klasse
      * @param random
-     * Zahl zwischen beiderseits 0 und 7
+     * Zahl zwischen beiderseits einschließlich 0 und 7
      */
     Verpflegung(int random) {
         switch (random) {
