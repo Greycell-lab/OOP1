@@ -5,8 +5,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class MyFrame extends JFrame implements ActionListener {
-    static int x;
-    static int y;
     static int X = 10;
     static int Y = 70;
     static int counter = 0;
@@ -17,9 +15,9 @@ public class MyFrame extends JFrame implements ActionListener {
     String operator = "";
     ArrayList<Button> buttons = new ArrayList<>();
     ArrayList<Button> operators = new ArrayList<>();
+    JTextField tf = new JTextField();
     MyFrame(){
         Dimension d = new Dimension(460, 350);
-        JTextField tf = new JTextField();
         tf.setText("0");
         tf.setFont(new Font("Curier New", Font.BOLD, 25));
         tf.setEditable(false);
@@ -28,10 +26,7 @@ public class MyFrame extends JFrame implements ActionListener {
         for(int i=0;i<9;i++) buttons.add(new Button(String.valueOf(i+1)));
         for(var x : buttons)
         {
-            x.addActionListener(e -> {
-                num.append(x.getLabel());
-                tf.setText(num.toString());
-            });
+            x.addActionListener(this);
             counter++;
             x.setBounds(X, Y, 100, 50);
             X += 110;
@@ -45,22 +40,21 @@ public class MyFrame extends JFrame implements ActionListener {
         }
         Button zero = new Button("0");
         zero.setBounds(120, 250, 100, 50);
-        zero.addActionListener(e -> {
-            num.append(zero.getLabel());
-            tf.setText(num.toString());
-        });
-        Button negative = new Button("negative");
-        Button clear = new Button("C");
-        Button plus = new Button("+");
-        Button minus = new Button("-");
-        Button multiply = new Button("*");
-        Button divide = new Button("/");
+        zero.addActionListener(this);
+        buttons.add(zero);
+        operators.add(new Button("+"));
+        operators.add(new Button("-"));
+        operators.add(new Button("*"));
+        operators.add(new Button("/"));
+        X = 340;
+        Y = 70;
+        for(var x : operators){
+            x.addActionListener(this);
+            x.setBounds(X, Y, 100, 50);
+            Y += 60;
+            frame.add(x);
+        }
         Button equals = new Button("=");
-        negative.setBounds(230, 250, 100, 50);
-        clear.setBounds(10, 250, 100, 50);
-        minus.setBounds(340, 130, 100, 50);
-        multiply.setBounds(340, 190, 100, 50);
-        divide.setBounds(340, 250, 100, 50);
         equals.setBounds(340, 10, 100, 50);
         equals.addActionListener(e ->{
             if(operator.equals("+")) sum = number + Integer.parseInt(num.toString());
@@ -71,7 +65,6 @@ public class MyFrame extends JFrame implements ActionListener {
             num.delete(0, num.length());
             number = sum;
         });
-        plus.setBounds(340, 70, 100, 50);
         /*plus.addActionListener(e -> {
             if(!operator.equals("")) {
                 System.out.println(num.toString());
@@ -140,31 +133,74 @@ public class MyFrame extends JFrame implements ActionListener {
             }
             operator = "/";
         });*/
-        clear.addActionListener(e -> {
-            num.delete(0, num.length());
-            number = 0;
-            tf.setText("0");
-        });
         tf.setBounds(10, 10, 320, 50);
         frame.setLayout(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setBackground(Color.BLACK);
         frame.setSize(d);
         frame.add(tf);
-        frame.add(multiply);
-        frame.add(divide);
-        frame.add(minus);
         frame.add(zero);
         frame.add(equals);
-        frame.add(plus);
-        frame.add(clear);
-        frame.add(negative);
         frame.setVisible(true);
         frame.setFocusable(true);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == buttons.get(0)){
+            num.append("1");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(1)){
+            num.append("2");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(2)){
+            num.append("3");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(3)){
+            num.append("4");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(4)){
+            num.append("5");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(5)){
+            num.append("6");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(6)){
+            num.append("7");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(7)){
+            num.append("8");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(8)){
+            num.append("9");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == buttons.get(9)){
+            num.append("0");
+            tf.setText(num.toString());
+        }
+        if(e.getSource() == operators.get(0)){
+            if(operator.equals("")) {
+                number = Integer.parseInt(num.toString());
+                num.delete(0, num.length());
+                tf.setText("0");
+            }
+            else{
+                number2 = Integer.parseInt(num.toString());
+                number += number2;
+                number2 = 0;
+                num.delete(0, num.length());
+                tf.setText("0");
+            }
+        }
 
     }
 }
