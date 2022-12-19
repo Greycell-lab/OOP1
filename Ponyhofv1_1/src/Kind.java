@@ -1,8 +1,6 @@
 import java.util.Random;
 
 public class Kind extends Besucher{
-        //Zufallszahlengenerator
-    static Random rnd = new Random();
     /**
      * Erstellt ein Kind-Objekt. Zusätzlich wird der Attraktionsliste der Klasse Attraktion jeweils
      * 3 zufällig ausgewählte Attraktion-Objekte hinzugefügt und der

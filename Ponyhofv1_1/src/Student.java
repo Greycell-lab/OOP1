@@ -1,8 +1,6 @@
 import java.util.Random;
 
 public class Student extends Besucher{
-        //Zufallszahlengenerator
-    static Random rnd = new Random();
     /**
      * Erstellt ein Student-Objekt.
      * Zusätzlich wird der Attraktionsliste der Klasse Attraktion jeweils
