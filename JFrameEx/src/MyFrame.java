@@ -1,8 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-public class MyFrame extends JFrame {
+public class MyFrame extends JFrame implements ActionListener {
     static int x;
     static int y;
     static int X = 10;
@@ -70,7 +72,7 @@ public class MyFrame extends JFrame {
             number = sum;
         });
         plus.setBounds(340, 70, 100, 50);
-        plus.addActionListener(e -> {
+        /*plus.addActionListener(e -> {
             if(!operator.equals("")) {
                 System.out.println(num.toString());
                 number2 = Integer.parseInt(num.toString());
@@ -137,7 +139,7 @@ public class MyFrame extends JFrame {
                 tf.setText("0");
             }
             operator = "/";
-        });
+        });*/
         clear.addActionListener(e -> {
             num.delete(0, num.length());
             number = 0;
@@ -159,5 +161,10 @@ public class MyFrame extends JFrame {
         frame.add(negative);
         frame.setVisible(true);
         frame.setFocusable(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 }
