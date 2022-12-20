@@ -57,7 +57,7 @@ public class MyFrame extends JFrame implements ActionListener {
         Button equals = new Button("=");
         equals.setBounds(340, 10, 100, 50);
         equals.addActionListener(e ->{
-            if(operator.equals("+")) sum = number + Integer.parseInt(num.toString());
+            if(operator.equals("+")) sum = number + number2;
             if(operator.equals("-")) sum = number - Integer.parseInt(num.toString());
             if(operator.equals("*")) sum = number * Integer.parseInt(num.toString());
             if(operator.equals("/")) sum = number / Integer.parseInt(num.toString());
@@ -190,16 +190,16 @@ public class MyFrame extends JFrame implements ActionListener {
         if(e.getSource() == operators.get(0)){
             if(operator.equals("")) {
                 number = Integer.parseInt(num.toString());
-                num.delete(0, num.length());
-                tf.setText("0");
+                System.out.println(number);
             }
             else{
                 number2 = Integer.parseInt(num.toString());
                 number += number2;
                 number2 = 0;
-                num.delete(0, num.length());
-                tf.setText("0");
+                System.out.println(number2);
             }
+            num.delete(0, num.length());
+            tf.setText("0");
         }
 
     }
