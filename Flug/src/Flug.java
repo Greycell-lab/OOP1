@@ -26,7 +26,7 @@ public class Flug {
         }
     }
     static public void ausgabeFlug(){
-        System.out.println("Folgende flüge gefunden:");
+        System.out.println("Folgende Flüge gefunden:");
         for(var x : gewaehlteFluege){
                 System.out.println("ID: " + x.flugId);
                 System.out.println("Abflugzeit: " + x.abflugZeit);
