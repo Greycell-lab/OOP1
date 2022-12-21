@@ -2,8 +2,8 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Random rnd = new Random();
-        EnumExcercise.WOCHENTAGE e = EnumExcercise.WOCHENTAGE.MITTWOCH;
-        System.out.println(e);
+        //Aufgabe1.abfrage();
+        //Aufgabe2.zeigeNote(55);
+        //Aufgabe3.abfrage();
     }
 }

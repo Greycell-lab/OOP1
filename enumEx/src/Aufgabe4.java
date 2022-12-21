@@ -1,0 +1,2 @@
+public class Aufgabe4 {
+}
