@@ -48,6 +48,9 @@ public class Kartenspiel {
                     System.out.println("Das war wohl zu viel... "+ x.name + " hat verloren mit " + x.punktzahl + " Punkten.");
                     System.exit(0);
                 }
+                else if(x.punktzahl == 21){
+                    System.out.println(x.name + " hat das Spiel gewonnen mit " + x.punktzahl + " Punkten.");
+                }
             }while(nochEine);
         }
         if(mitspieler.get(0).punktzahl > mitspieler.get(1).punktzahl) System.out.println("Spieler hat gewonnen.");
@@ -60,7 +63,8 @@ public class Kartenspiel {
     public void karteZiehen(){
         this.hand.add(kartenstapel.get(0));
         System.out.println(kartenstapel.get(0) + " gezogen.");
-        this.punktzahl += kartenstapel.get(0).wert;
+        if(kartenstapel.get(0) == Kartentypen.ASS && this.punktzahl > 10) this.punktzahl += 1;
+        else this.punktzahl += kartenstapel.get(0).wert;
         kartenstapel.remove(0);
 
     }
