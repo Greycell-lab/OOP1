@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aktien/Aktien.iml" filepath="$PROJECT_DIR$/Aktien/Aktien.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assoziationen/Assoziationen.iml" filepath="$PROJECT_DIR$/Assoziationen/Assoziationen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bastelaufgabe/Bastelaufgabe.iml" filepath="$PROJECT_DIR$/Bastelaufgabe/Bastelaufgabe.iml" />
       <module fileurl="file://$PROJECT_DIR$/Challanges/Challanges.iml" filepath="$PROJECT_DIR$/Challanges/Challanges.iml" />
