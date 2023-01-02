@@ -18,13 +18,28 @@ public class Haus {
     double preis;
     float qm;
     int zimmer;
+    String getBezeichnung(){
+        return this.bezeichnung;
+    }
+    int getID(){
+        return this.id;
+    }
+    double getPreis(){
+        return this.preis;
+    }
+    float getQm(){
+        return this.qm;
+    }
+    int getZimmer(){
+        return this.zimmer;
+    }
     public static void hausListeAusgabe(){
         System.out.println();
         System.out.println("Gefundene Immobilien: ");
         System.out.println("ID\tBezeichnung\t\t\tPreis\t\tqm\t\tZimmer");
         for(var x : gefundenListe) {
-            if(x.bezeichnung.length() < 16) System.out.println(x.id + ":\t" + x.bezeichnung + "\t\t" + String.format("%.02f", x.preis) + "\t" + String.format("%.02f", x.qm) + "\t" + x.zimmer);
-            else System.out.println(x.id + ":\t" + x.bezeichnung + "\t" + String.format("%.02f", x.preis) + "\t" + String.format("%.02f", x.qm) + "\t" + x.zimmer);
+            if(x.bezeichnung.length() < 16) System.out.println(x.id + ":\t" + x.getBezeichnung() + "\t\t" + String.format("%.02f", x.getPreis()) + "\t" + String.format("%.02f", x.getQm()) + "\t" + x.getZimmer());
+            else System.out.println(x.id + ":\t" + x.getBezeichnung() + "\t" + String.format("%.02f", x.getPreis()) + "\t" + String.format("%.02f", x.getQm()) + "\t" + x.getZimmer());
         }
     }
     public static void fillList(){
