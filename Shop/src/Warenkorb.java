@@ -18,8 +18,8 @@ public class Warenkorb {
         return summe;
     }
     public void showWarenkorb(){
-        System.out.println("Artikel\t\tMenge");
-        for(var x : this.warenkorb.keySet()) System.out.println(x.getBezeichnung() + "\t\t" + warenkorb.get(x) + "\t\t" + String.format("%.2f", (x.getVerkaufspreis() * warenkorb.get(x))));
+        System.out.println("ID\t\tArtikel\t\tMenge");
+        for(var x : this.warenkorb.keySet()) System.out.println(x.getId() + "\t\t" + x.getBezeichnung() + "\t\t" + warenkorb.get(x) + "\t\t" + String.format("%.2f", (x.getVerkaufspreis() * warenkorb.get(x))));
         System.out.println("Gesamt:\t\t\t\t" + String.format("%.2f", getSumme()));
     }
     public void showMenu(){
@@ -49,8 +49,8 @@ public class Warenkorb {
         }
     }
     public void ausgabeArtikel(){
-        System.out.println("Artikel\t\tPreis");
-        for(var x : Artikel.artikelListe) System.out.println(x.getBezeichnung() + "\t\t" + x.getVerkaufspreis() + "€");
+        System.out.println("ID\t\tArtikel\t\tPreis");
+        for(var x : Artikel.artikelListe) System.out.println(x.getId() + "\t\t" + x.getBezeichnung() + "\t\t" + x.getVerkaufspreis() + "€");
     }
     public void kaufenArtikel(){
         do {
