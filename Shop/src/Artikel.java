@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Artikel {
-
+    public static ArrayList<Artikel> artikelListe = new ArrayList<>();
     private int id;
     private String bezeichnung;
     private double einkaufspreis;
@@ -13,6 +14,7 @@ public class Artikel {
         this.einkaufspreis = einkaufspreis;
         this.gewinnsatz = gewinnsatz;
         this.verkaufspreis = einkaufspreis + einkaufspreis /100 * gewinnsatz;
+        artikelListe.add(this);
     }
 
     public int getId() {
