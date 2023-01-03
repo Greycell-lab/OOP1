@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Aktien/Aktien.iml" filepath="$PROJECT_DIR$/Aktien/Aktien.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assoziationen/Assoziationen.iml" filepath="$PROJECT_DIR$/Assoziationen/Assoziationen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assoziationen/Assoziationen2/Assoziationen2.iml" filepath="$PROJECT_DIR$/Assoziationen/Assoziationen2/Assoziationen2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bastelaufgabe/Bastelaufgabe.iml" filepath="$PROJECT_DIR$/Bastelaufgabe/Bastelaufgabe.iml" />
       <module fileurl="file://$PROJECT_DIR$/Challanges/Challanges.iml" filepath="$PROJECT_DIR$/Challanges/Challanges.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag3/FPA/FPA.iml" filepath="$PROJECT_DIR$/Tag3/FPA/FPA.iml" />
@@ -23,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/Ponyhofv1_1/Ponyhofv1_1.iml" filepath="$PROJECT_DIR$/Ponyhofv1_1/Ponyhofv1_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ponyhofv1_1/Ponyhofv1_11.iml" filepath="$PROJECT_DIR$/Ponyhofv1_1/Ponyhofv1_11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Serialize/Serialize.iml" filepath="$PROJECT_DIR$/Serialize/Serialize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Shop/Shop.iml" filepath="$PROJECT_DIR$/Shop/Shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag1/Tag1.iml" filepath="$PROJECT_DIR$/Tag1/Tag1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag11/Tag11.iml" filepath="$PROJECT_DIR$/Tag11/Tag11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag2/Tag2.iml" filepath="$PROJECT_DIR$/Tag2/Tag2.iml" />

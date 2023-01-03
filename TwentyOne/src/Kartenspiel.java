@@ -92,9 +92,6 @@ public class Kartenspiel {
         kartenstapel.remove(0);
 
     }
-    public int getPunktzahl(){
-        return this.punktzahl;
-    }
     public void nocheineKarte(){
         do{
             try{

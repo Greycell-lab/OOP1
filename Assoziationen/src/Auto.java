@@ -1,21 +1,29 @@
+import java.util.ArrayList;
+
 public class Auto {
-    private int id;
-    private String marke;
+    private final int id;
+    private final String marke;
     private Person besitzer;
-    public Auto(int id, String marke, Person besitzer){
+    private static final ArrayList<Auto> autoListe = new ArrayList<>();
+    public Auto(int id, String marke){
         this.id = id;
         this.marke = marke;
+        autoListe.add(this);
     }
-    public void setId(int id){
-        this.id = id;
+    public Auto(int id, String marke, Person person){
+        this(id, marke);
+        this.besitzer = person;
     }
-    public int getId(){
-        return this.id;
+    public int getId() {
+        return id;
     }
-    public void setMarke(String marke){
-        this.marke = marke;
+    public String getMarke() {
+        return marke;
     }
-
-
-
+    public Person getBesitzer() {
+        return besitzer;
+    }
+    public static void printList(){
+        for(var x : autoListe) System.out.println(x.id + ": " + x.marke + " Besitzer: " + x.besitzer.getNachname());
+    }
 }
