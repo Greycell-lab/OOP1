@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstract/Abstract.iml" filepath="$PROJECT_DIR$/Abstract/Abstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aktien/Aktien.iml" filepath="$PROJECT_DIR$/Aktien/Aktien.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assoziationen/Assoziationen.iml" filepath="$PROJECT_DIR$/Assoziationen/Assoziationen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assoziationen/Assoziationen2/Assoziationen2.iml" filepath="$PROJECT_DIR$/Assoziationen/Assoziationen2/Assoziationen2.iml" />
@@ -14,11 +15,13 @@
       <module fileurl="file://$PROJECT_DIR$/Challanges/Generic/Generic.iml" filepath="$PROJECT_DIR$/Challanges/Generic/Generic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Helpful/Helpful.iml" filepath="$PROJECT_DIR$/Helpful/Helpful.iml" />
       <module fileurl="file://$PROJECT_DIR$/Immo/Immo.iml" filepath="$PROJECT_DIR$/Immo/Immo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/JFrameEx/JFrameEx.iml" filepath="$PROJECT_DIR$/JFrameEx/JFrameEx.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kaffee/Kaffee.iml" filepath="$PROJECT_DIR$/Kaffee/Kaffee.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kniffel/Kniffel.iml" filepath="$PROJECT_DIR$/Kniffel/Kniffel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag6/KniffelSpiel/KniffelSpiel.iml" filepath="$PROJECT_DIR$/Tag6/KniffelSpiel/KniffelSpiel.iml" />
       <module fileurl="file://$PROJECT_DIR$/Komposition/Komposition.iml" filepath="$PROJECT_DIR$/Komposition/Komposition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lamda/Lamda.iml" filepath="$PROJECT_DIR$/Lamda/Lamda.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP1.iml" filepath="$PROJECT_DIR$/OOP1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ponyhof/Ponyhof.iml" filepath="$PROJECT_DIR$/Ponyhof/Ponyhof.iml" />
       <module fileurl="file://$PROJECT_DIR$/PonyhofWithEnums/PonyhofWithEnums.iml" filepath="$PROJECT_DIR$/PonyhofWithEnums/PonyhofWithEnums.iml" />
@@ -27,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/Serialize/Serialize.iml" filepath="$PROJECT_DIR$/Serialize/Serialize.iml" />
       <module fileurl="file://$PROJECT_DIR$/Shop/Shop.iml" filepath="$PROJECT_DIR$/Shop/Shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/Shop/Shop1.iml" filepath="$PROJECT_DIR$/Shop/Shop1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Super/Super.iml" filepath="$PROJECT_DIR$/Super/Super.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag1/Tag1.iml" filepath="$PROJECT_DIR$/Tag1/Tag1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag11/Tag11.iml" filepath="$PROJECT_DIR$/Tag11/Tag11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tag2/Tag2.iml" filepath="$PROJECT_DIR$/Tag2/Tag2.iml" />
