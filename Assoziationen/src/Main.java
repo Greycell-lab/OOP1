@@ -16,7 +16,9 @@ public class Main {
         /*Interpret dJm = new Interpret("DJ M.");
         Song happyNewYear = new Song("Happy New Year", dJm);
         Song whatsUpMan = new Song("Whats Up Man", dJm);
-        for(var x : dJm.songs) System.out.println(x.interpret.name + " " + x.titel);*/
+        for(var x : dJm.songs) {
+            System.out.println(x.interpret.name + " " + x.titel);
+        }*/
 
         //Aufgabe 2
         /*Fach a = new Fach(1, "Java-Grundlagen");
@@ -68,9 +70,9 @@ public class Main {
         }*/
 
         //Aufgabe 3
-        /*Tierart jaguar = new Tierart("Jaguar", 3.75D);
-        Tierart leopard = new Tierart("Leopard", 3.10D);
-        Tierart schaf = new Tierart("Schaf", 4.50D);
+        /*Tierart jaguar = new Tierart("Jaguar", 3.75);
+        Tierart leopard = new Tierart("Leopard", 3.10);
+        Tierart schaf = new Tierart("Schaf", 4.50);
         Tier j1 = new Tier(1, "Shira", jaguar);
         Tier j2 = new Tier(2, "Shari", jaguar);
         Tier l1 = new Tier(3, "Lopa", leopard);
@@ -103,14 +105,15 @@ public class Main {
             System.out.println();
             System.out.println("Buch: " + x.getTitle());
             System.out.println();
-            System.out.println("Autor");
+            System.out.println("Autor:");
             for(var y : x.getAutorListe()) System.out.println(y.getName());
         }
+        System.out.println("--------------------------");
         for(var x : Autor.getAutorListe()){
             System.out.println();
             System.out.println("Autor: " + x.getName());
             System.out.println();
-            System.out.println("Buch");
+            System.out.println("Buch:");
             for(var y : x.getBuchListe()) System.out.println(y.getTitle());
         }*/
 

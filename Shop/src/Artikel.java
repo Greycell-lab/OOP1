@@ -3,11 +3,11 @@ import java.util.HashMap;
 
 public class Artikel {
     public static ArrayList<Artikel> artikelListe = new ArrayList<>();
-    private int id;
-    private String bezeichnung;
-    private double einkaufspreis;
-    private double gewinnsatz;
-    private double verkaufspreis;
+    private final int id;
+    private final String bezeichnung;
+    private final double einkaufspreis;
+    private final double gewinnsatz;
+    private final double verkaufspreis;
     public Artikel(int id, String bezeichnung, double einkaufspreis, double gewinnsatz){
         this.id = id;
         this.bezeichnung = bezeichnung;
@@ -23,14 +23,6 @@ public class Artikel {
 
     public String getBezeichnung() {
         return bezeichnung;
-    }
-
-    public double getEinkaufspreis() {
-        return einkaufspreis;
-    }
-
-    public double getGewinnsatz() {
-        return gewinnsatz;
     }
 
     public double getVerkaufspreis() {

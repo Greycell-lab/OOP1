@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Buch {
-    private static ArrayList<Buch> buchListe = new ArrayList<>();
-    private String title;
-    private ArrayList<Autor> autorListe = new ArrayList<>();
+    private static final ArrayList<Buch> buchListe = new ArrayList<>();
+    private final String title;
+    private final ArrayList<Autor> autorListe = new ArrayList<>();
     public Buch(String title){
         this.title = title;
         buchListe.add(this);
