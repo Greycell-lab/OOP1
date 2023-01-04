@@ -4,6 +4,6 @@ public class Main {
         Bicycle bicycle = new Bicycle("Bounty");
         car.driveVehicle();
         bicycle.driveVehicle();
-        System.out.println(car.getName() + " " + bicycle.getName());
+        System.out.println(car.name + " " + bicycle.name);
     }
 }
