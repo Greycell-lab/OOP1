@@ -85,8 +85,8 @@ public class Main {
         k.addTier(l1);
         k.addTier(j2);
         k.getTierListe();
-        System.out.println("Futtermenge gesamt für dieses Gehege: " + k.futtermengeGesamt());*/
-
+        System.out.println("Futtermenge gesamt für dieses Gehege: " + k.futtermengeGesamt());
+*/
         //Aufgabe 4
         /*Buch freeze = new Buch("Freeze");
         Buch frooze = new Buch("The Frooze");
@@ -118,12 +118,12 @@ public class Main {
         }*/
 
         //Aufgabe 5
-        /*Ritter lanzelot = new Ritter();
+        Ritter lanzelot = new Ritter();
         lanzelot.setName("Graf von Holzhausen");
         lanzelot.getPferd().setName("Lucy");
         Ritter graf = new Ritter("Prinz von Doppelkeks", "Schoko");
         for(var x : Ritter.getRitter()) System.out.println("Ritter: " + x.getName() + "\nPferd: " + x.getPferd().getName() + "\n");
         System.out.println();
-        for(var x : Pferd.getPferde()) System.out.println("Pferd: " + x.getName() + "\nRitter: " + x.getBesitzer().getName() + "\n");*/
+        for(var x : Pferd.getPferde()) System.out.println("Pferd: " + x.getName() + "\nRitter: " + x.getBesitzer().getName() + "\n");
     }
 }

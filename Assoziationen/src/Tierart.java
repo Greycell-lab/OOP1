@@ -14,15 +14,7 @@ public class Tierart {
         return bezeichnung;
     }
 
-    public void setBezeichnung(String bezeichnung) {
-        this.bezeichnung = bezeichnung;
-    }
-
     public double getFuttermenge() {
         return futtermenge;
-    }
-
-    public void setFuttermenge(double futtermenge) {
-        this.futtermenge = futtermenge;
     }
 }

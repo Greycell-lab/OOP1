@@ -27,25 +27,9 @@ public class Gehege {
         }
         return gesamtMenge;
     }
-
-        public int getMaxAnzahlDerTiere() {
-        return maxAnzahlDerTiere;
-    }
-
-    public void setMaxAnzahlDerTiere(int maxAnzahlDerTiere) {
-        this.maxAnzahlDerTiere = maxAnzahlDerTiere;
-    }
-
-    public ArrayList<Tierart> getArtListe() {
-        return artListe;
-    }
-
     public void getTierListe() {
         System.out.println("Name\t");
         for(var x : tierListe) System.out.println(x.getName() + "\t" + x.getArt().getBezeichnung());
-    }
-    public void setTierListe(Tier t){
-        this.tierListe.add(t);
     }
     public void setArtListe(Tierart t){
         this.artListe.add(t);

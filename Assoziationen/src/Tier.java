@@ -11,28 +11,10 @@ public class Tier {
         this.art = art;
         tierList.add(this);
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Tierart getArt() {
         return art;
-    }
-
-    public void setArt(Tierart art) {
-        this.art = art;
     }
 }

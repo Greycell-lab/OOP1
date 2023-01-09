@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 
 public class Gruppe {
-    public record Abenteurer(String name) {
+    private record Abenteurer(String name) {
+        public String getName(){
+            return name;
+        }
     }
     private final ArrayList<Abenteurer> abenteurerInDerGruppe = new ArrayList<>();
 

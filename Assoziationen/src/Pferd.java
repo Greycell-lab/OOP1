@@ -11,15 +11,12 @@ public class Pferd {
     public Ritter getBesitzer() {
         return besitzer;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public void setBesitzer(Ritter besitzer) {
         this.besitzer = besitzer;
     }
-
     public static ArrayList<Pferd> getPferde() {
         return pferde;
     }

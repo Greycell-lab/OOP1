@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Ritter {
     private static ArrayList<Ritter> ritter = new ArrayList<>();
     private String name;
-    private Pferd pferd;
+    private final Pferd pferd;
     public Ritter(){
         Pferd p = new Pferd();
         p.setBesitzer(this);
@@ -20,15 +20,12 @@ public class Ritter {
     public void setName(String name) {
         this.name = name;
     }
-
     public Pferd getPferd() {
         return pferd;
     }
-
     public static ArrayList<Ritter> getRitter() {
         return ritter;
     }
-
     public String getName() {
         return name;
     }
