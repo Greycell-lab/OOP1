@@ -4,9 +4,6 @@ import java.util.Scanner;
 public class Warenkorb {
     private static final String LINES = "------------------------------";
     private HashMap<Artikel, Integer> warenkorb = new HashMap<>();
-    public HashMap<Artikel, Integer> getWarenkorb() {
-        return warenkorb;
-    }
     private static boolean passed;
     private static int auswahl, menge;
     public double getSumme(){

@@ -7,5 +7,6 @@ public class Main {
         Raum.fillArray();
         Raum.getBelegung(Raum.getArray());
         for(var x : Raum.getArray()) System.out.println(x.getBelegung());
+
     }
 }
