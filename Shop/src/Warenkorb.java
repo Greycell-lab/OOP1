@@ -70,7 +70,7 @@ public class Warenkorb {
         showWarenkorb();
         abfrage();
         if(!this.warenkorb.containsKey(Artikel.artikelListe.get(auswahl-1))) System.out.println("Es befindet sich kein Artikel mit dieser ID im Warenkorb");
-        else if(this.warenkorb.get(Artikel.artikelListe.get(auswahl-1))+menge <= 0) this.warenkorb.remove(Artikel.artikelListe.get(auswahl-1));
+        else if(this.warenkorb.get(Artikel.artikelListe.get(auswahl-1)) - menge <= 0) this.warenkorb.remove(Artikel.artikelListe.get(auswahl-1));
         else this.warenkorb.replace(Artikel.artikelListe.get(auswahl-1), this.warenkorb.get(Artikel.artikelListe.get(auswahl-1))-menge);
         System.out.println(LINES);
     }
