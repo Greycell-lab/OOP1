@@ -4,18 +4,8 @@ public class Main {
     static int x;
     static boolean passed;
     public static void main(String[] args) {
-    PasswordGetable p  = () ->{
-      do {
-          try {
-              System.out.println("Input Password: ");
-              x = Integer.parseInt(new Scanner(System.in).nextLine());
-              passed = true;
-          } catch (NumberFormatException e) {
-              System.out.println("Something went wrong. Try again.");
-              passed = false;
-          }
-      }while(!passed);
-    };
-        p.getPassword();
+
+        Calculateable calc = Double::sum;
+        System.out.println(calc.getResult(12.5, 22.5));
     }
 }

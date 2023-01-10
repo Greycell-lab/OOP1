@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class Artikel {
     public static ArrayList<Artikel> artikelListe = new ArrayList<>();
     private static int id = 1;
-    private int artikelId;
+    private final int artikelId;
     private final String bezeichnung;
     private final double einkaufspreis;
     private final double gewinnsatz;

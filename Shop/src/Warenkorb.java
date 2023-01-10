@@ -26,6 +26,8 @@ public class Warenkorb {
         System.out.println("2: Artikel in den Warenkorb");
         System.out.println("3: Artikel löschen");
         System.out.println("4: Warenkorb anzeigen");
+        System.out.println("5: Zur Kasse");
+        System.out.println("6: Shop verlassen");
         System.out.println(LINES);
         do {
             try {
@@ -36,7 +38,7 @@ public class Warenkorb {
                 System.out.println("Etwas ist schief gelaufen. Bitte versuche es erneut");
                 passed = false;
             }
-            if(auswahl < 1 || auswahl > 4){
+            if(auswahl < 1 || auswahl > 6){
                 System.out.println("Diese Zahl steht nicht zur Wahl");
                 passed = false;
             }
@@ -46,6 +48,8 @@ public class Warenkorb {
             case 2 -> kaufenArtikel();
             case 3 -> entferneArtikel();
             case 4 -> showWarenkorb();
+            case 5 -> bestellungAbschicken();
+            case 6 -> leaveShop();
         }
     }
     public void ausgabeArtikel(){
@@ -90,6 +94,34 @@ public class Warenkorb {
             }
         }while(!passed);
         System.out.println(LINES);
+    }
+    public static void leaveShop(){
+        System.out.println("Vielen dank fürs vorbei schauen.");
+        System.exit(0);
+    }
+    public void bestellungAbschicken(){
+        showWarenkorb();
+        double bezahlen = 0;
+        double rest = this.getSumme();
+        do {
+            try {
+                System.out.print("Bitte tragen sie den geforderten Betrag ein: ");
+                bezahlen = Double.parseDouble(new Scanner(System.in).nextLine());
+                passed = true;
+            } catch (NumberFormatException e) {
+                System.out.println("Etwas ist schief gelaufen. Versuche es erneut");
+                passed = false;
+            }
+            rest -= bezahlen;
+            if(rest > 0) {
+                System.out.println("Sie haben zu wenig geld gegeben.");
+                System.out.println("Bitte zahlen sie die restlichen " + String.format("%.2f", rest) + "€");
+            }
+        }while(!passed || rest > 0);
+        if(-rest > 0) System.out.println("Sie erhalten " + String.format("%.2f", -rest) + "€ zurück.");
+        System.out.println("Vielen Dank für Ihren Einkauf.");
+        this.warenkorb.clear();
+
     }
 
 }

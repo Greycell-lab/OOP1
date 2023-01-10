@@ -2,7 +2,7 @@ package Com;
 
 import java.util.ArrayList;
 
-public abstract sealed class Computer permits Desktop, Notebook, Server {
+public abstract class Computer {
     private final static ArrayList<Computer> computerListe = new ArrayList<>();
     private boolean zustand;
     private final String hersteller;
