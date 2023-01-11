@@ -12,7 +12,6 @@ public abstract class Computer {
         this.hersteller = hersteller;
         computerListe.add(this);
     }
-
     public void setZustand() {
         zustand = !zustand;
     }
